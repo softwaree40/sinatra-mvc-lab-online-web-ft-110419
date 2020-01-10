@@ -3,7 +3,7 @@ class PigLatinizer
   def piglatinize(text)
 
     words = word.split(" ")
-    converted_words = words.collect do |word_new|
+    converted_words = words.collect do |word|
       if is_vowel?(word[0])
         word = word + "way"
       else
